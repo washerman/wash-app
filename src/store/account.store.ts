@@ -1,6 +1,6 @@
 import { observable, action } from 'mobx'
 
-export class ProfileStore {
+export class AccountStore {
     @observable logo: string
     @observable name: string
     @observable vpa: string
