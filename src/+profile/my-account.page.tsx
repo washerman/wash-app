@@ -5,10 +5,14 @@ import { PageTitle } from '../components'
 
 @observer
 export class MyAccountPage extends React.Component {
+    onClick() { }
+
     render() {
         return (
-        <div>
-            <PageTitle heading={'My Account'} />
-        </div>)
+            <div>
+                <PageTitle heading={'My Account'} />
+                <hr />
+                <button onClick={this.onClick}>kick buttonwski</button>
+            </div>)
     }
 }
