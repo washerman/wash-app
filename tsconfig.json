@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "allowJs": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
     "jsx": "react",
     "lib": [
