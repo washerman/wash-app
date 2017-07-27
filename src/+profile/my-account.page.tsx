@@ -1,5 +1,14 @@
 import * as React from 'react'
+import { observer } from 'mobx-react'
 
-export function MyAccountPage() {
-    return <h1>My Account</h1>
+import { PageTitle } from '../components'
+
+@observer
+export class MyAccountPage extends React.Component {
+    render() {
+        return (
+        <div>
+            <PageTitle heading={'My Account'} />
+        </div>)
+    }
 }
