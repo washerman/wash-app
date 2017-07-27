@@ -17,7 +17,6 @@
     "outDir": "build/dist",
     "rootDir": "src",
     "sourceMap": true,
-    "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
     "target": "es2015"
   },
