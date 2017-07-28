@@ -28,6 +28,6 @@ export class AccountStore {
     }
 
     @action.bound updateVPA(vpa: string) {
-        this.name = vpa
+        this.vpa = vpa
     }
 }
