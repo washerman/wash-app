@@ -1,5 +1,6 @@
 :root {
   --main-bg-color: #fbfbfb;
+  --primary-blue: #108ee9;
 }
 
 body {
@@ -7,4 +8,29 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
+}
+
+
+.page-title {
+  color: var(--primary-blue);
+  font-size: larger;
+  margin: 1rem 2rem;
+  text-transform: uppercase;
+}
+
+.profile-pane {
+  margin: 1rem 2rem;
+}
+
+.profile-pane label {
+  margin-right: 1em;
+}
+
+.profile-pane .row {
+  margin-bottom: 2em;
+}
+
+.row {
+  display: flex;
+  flex-flow: row nowrap;
 }

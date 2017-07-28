@@ -4,6 +4,8 @@ import * as React from 'react'
 import { PageTitle } from '../components'
 import { AccountStore } from '../store/account.store'
 
+import { ProfilePane } from './components/profile-pane'
+
 interface IProps {
     accountStore?: AccountStore
 }
@@ -16,15 +18,12 @@ export class MyAccountPage extends React.Component<IProps, IProps> {
     }
 
     render() {
+        const name = this.props.accountStore.name
+        const vpa = this.props.accountStore.vpa
         return (
             <div>
                 <PageTitle heading={'My Account'} />
-                <hr />
-                <button onClick={() => this.onClick()}>kick buttonwski</button>
-                <hr />
-                <div className="pol-profile">
-                    name: {this.props.accountStore.name}
-                </div>
+                <ProfilePane name={name} vpa={vpa} />
             </div>)
     }
 }
