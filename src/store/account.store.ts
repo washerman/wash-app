@@ -7,7 +7,11 @@ export class AccountStore {
     @observable name: string
     @observable vpa: string
 
-    constructor(public accountService: AccountService) {
+    constructor(private accountService: AccountService) {
+        this.init()
+    }
+
+    init() {
         this.accountService
             .loadAll()
             .then(this.setInitial)

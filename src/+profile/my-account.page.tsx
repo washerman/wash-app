@@ -12,7 +12,7 @@ interface IProps {
 
 @inject('accountStore')
 @observer
-export class MyAccountPage extends React.Component<IProps, IProps> {
+export class MyAccountPage extends React.Component<IProps, {}> {
     onChangeName = this.props.accountStore.updateName
     onChangeVPA = this.props.accountStore.updateVPA
 
