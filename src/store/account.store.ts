@@ -19,11 +19,11 @@ export class AccountStore {
         this.vpa = vpa
     }
 
-    @action updateName(name: string) {
+    @action.bound updateName(name: string) {
         this.name = name
     }
 
-    @action updateVPA(vpa: string) {
+    @action.bound updateVPA(vpa: string) {
         this.name = vpa
     }
 }

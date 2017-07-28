@@ -13,9 +13,8 @@ interface IProps {
 @inject('accountStore')
 @observer
 export class MyAccountPage extends React.Component<IProps, IProps> {
-    onClick() {
-        this.props.accountStore.updateName('polru')
-    }
+    onChangeName = this.props.accountStore.updateName
+    onChangeVPA = this.props.accountStore.updateVPA
 
     render() {
         const name = this.props.accountStore.name
@@ -23,7 +22,7 @@ export class MyAccountPage extends React.Component<IProps, IProps> {
         return (
             <div>
                 <PageTitle heading={'My Account'} />
-                <ProfilePane name={name} vpa={vpa} />
+                <ProfilePane name={name} onChangeName={this.onChangeName} onChangeVPA={this.onChangeVPA} vpa={vpa} />
             </div>)
     }
 }
