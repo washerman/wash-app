@@ -13,14 +13,14 @@ interface IProps {
 export class MyAccountPage extends React.Component<IProps, IProps> {
     onClick() {
         this.props.accountStore.updateName('polru')
-     }
+    }
 
     render() {
         return (
             <div>
                 <PageTitle heading={'My Account'} />
                 <hr />
-                <button onClick={this.onClick}>kick buttonwski</button>
+                <button onClick={() => this.onClick()}>kick buttonwski</button>
                 <hr />
                 <div className="pol-profile">
                     name: {this.props.accountStore.name}
