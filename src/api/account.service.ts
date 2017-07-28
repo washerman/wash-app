@@ -1,4 +1,4 @@
-interface IAccountData {
+export interface IAccountData {
     logo?: string
     name?: string
     vpa?: string
